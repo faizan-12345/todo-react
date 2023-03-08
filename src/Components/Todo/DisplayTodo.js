@@ -32,7 +32,7 @@ function DisplayTodo({ todo, toggleComplete, handleDelete, handleEdit }) {
 
         < EditIcon className="icons edit" onClick={() => handleEdit(todo, newTitle)} />
 
-        < DeleteIcon className="icons delete" />
+        < DeleteIcon className="icons delete" onClick={() => handleDelete(todo.id)}/>
 
 
       </div>
